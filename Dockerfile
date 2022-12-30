@@ -4,6 +4,6 @@ FROM node:alpine
 
 WORKDIR ./
 COPY . .
-RUN npm install -g
+RUN npm install
 # Set up a default command
 CMD [ "node","index.js" ]
