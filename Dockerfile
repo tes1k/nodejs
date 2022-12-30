@@ -2,8 +2,8 @@ FROM node:alpine
 
 #Install some dependencies
 
-WORKDIR /DevOps-M5-nodeProject
-COPY ./ /DevOps-M5-nodeProject
+WORKDIR ./
+COPY . .
 RUN npm install -g
 # Set up a default command
 CMD [ "node","index.js" ]
