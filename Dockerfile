@@ -4,6 +4,6 @@ WORKDIR /usr/app
 
 COPY ./ ./
 
-RUN npm install
+RUN npm install -g <pkg>
 
 CMD ["npm", "start"]
