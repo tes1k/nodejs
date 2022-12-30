@@ -2,8 +2,8 @@ FROM node:alpine
 
 #Install some dependencies
 
-WORKDIR /usr/app
-COPY ./ /usr/app
+WORKDIR /DevOps-M5-nodeProject
+COPY ./ /DevOps-M5-nodeProject
 RUN npm install
 
 # Set up a default command
