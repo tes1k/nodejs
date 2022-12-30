@@ -1,9 +1,10 @@
 FROM node:alpine
 
+#Install some dependencies
+
 WORKDIR /usr/app
+COPY ./ /usr/app
+RUN npm install
 
-COPY ./ ./
-
-RUN npm install -g <pkg>
-
-CMD ["npm", "start"]
+# Set up a default command
+CMD [ "npm","start" ]
